@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易云音乐（仿）</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/song.css">
+</head>
+<body>
+    <marquee id="TianQi" direction="left" scrollamount="7"></marquee>
+    <div id="to-top">
+        <header>
+            <h1><a href="index.html"></a></h1>
+            <ul>
+                <li><a href="index.html" class="top-inner">发现音乐</a></li>
+                <li><a href="userlist.html">我的音乐</a></li>
+                <li><a href="https://music.163.com/#/login?targetUrl=http%3A%2F%2Fmusic.163.com%2Ffriend">朋友</a></li>
+                <li><a href="https://music.163.com/store/product">商城</a></li>
+                <li><a href="https://music.163.com/nmusician/web/index#/" target="_blank">音乐人</a></li>
+                <li><a href="https://music.163.com/#/download">下载客户端</a><i class="top-hot"></i></li>
+            </ul>
+            <div class="top-login">
+                <!-- <img src="img/userimg.jpg"> -->
+                <a class="color999" href="#" onclick="openLogin()">登录</a>
+                <ul>
+                    <i class="t-3"></i>
+                    <li onclick="openLogin()"><a href="#"><i></i><span>手机号登录</span></a></li>
+                    <li onclick="openLogin()"><a href="#"><i></i><span>微信登录</span></a></li>
+                    <li onclick="openLogin()"><a href="#"><i></i><span>QQ登录</span></a></li>
+                    <li onclick="openLogin()"><a href="#"><i></i><span>新浪微博登录</span></a></li>
+                    <li onclick="openLogin()"><a href="#"><i></i><span>网易邮箱账号登录</span></a></li>
+                </ul>
+            </div>
+            <a href="#" class="creaters">创作者中心</a>
+            <div class="search-box">
+                    <input type="text" name="search" placeholder="音乐/视频/电台/用户" onclick="document.getElementsByClassName('res-search')[0].style.display='block'" onblur="setTimeout(function(){document.getElementsByClassName('res-search')[0].style.display='none'},100)" onkeyup="buquan(this)">
+                <div class="res-search"></div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><i class="red-3"></i><a href="https://music.163.com/#/discover"><span class="nav-inner">推荐</span></a></li>
+                <li><a href="https://music.163.com/#/discover/toplist"><span>排行榜</span></a></li>
+                <li><a href="https://music.163.com/#/discover/toplist"><span>歌单</span></a></li>
+                <li><a href="https://music.163.com/#/discover/djradio"><span>主播电台</span></a></li>
+                <li><a href="https://music.163.com/#/discover/artist"><span>歌手</span></a></li>
+                <li><a href="https://music.163.com/#/discover/album"><span>新碟上榜</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="songContent">
+        <div class="l-songinfo">
+            <div class="l-hd"><i class="danqu"></i><em class='songname'>RISE 登峰造极境</em></div>
+            <p class="sshu">歌手：<a class="songby">英雄联盟</a></p>
+            <p class="sshu">所属专辑：<a class="songname">RISE 登峰造极境</a></p>
+            <div class="simgbox"><img src="img/favicon.ico"></div>
+        </div>
+        <ul class="scrollbtn">
+            <li num='0' onclick="gundong(this)" style="background: #000"></li>
+            <li num='1' onclick="gundong(this)"></li>
+            <li num='2' onclick="gundong(this)"></li>
+            <li num='3' onclick="gundong(this)"></li>
+        </ul>
+        <section class="geci" style="opacity: 1">
+            作曲 : GALA<br>
+            作词 : GALA<br>
+            编曲：甘虎<br>
+            制作人：GALA + Other Great Music Arrangers<br>
+            吉他：赵亮<br>
+            贝司：石亮<br>
+            鼓：小达<br>
+            钢琴：甘虎<br>
+            和声演唱：苏朵、赵亮、星默、石亮、小达、小卡、小柳、吴琪、德歆、路路<br>
+            弦乐：中国国家交响乐团<br>
+            弦乐编写：陈迪、棨冰<br>
+            录音工程师：郝宇、石亮@Jet Studio<br>
+            录音助理：时磊、路路@Jet Studio<br>
+            混音工程师：军军@Village Studio<br>
+            母带工程师：军军@Perfect Studio<br>
+            ISRC CN-A50-10-333-10<br>
+        </section>
+        <section class="geci">
+                充满鲜花的世界到底在哪里<br>
+                如果它真的存在那么我一定会去<br>
+                我想在那里最高的山峰矗立<br>
+                不在乎它是不是悬崖峭壁<br>
+                <br>
+                用力活着用力爱哪怕肝脑涂地<br>
+                不求任何人满意只要对得起自己<br>
+                关于理想我从来没选择放弃<br>
+                即使在灰头土脸的日子里<br>
+                <br>
+                也许我没有天分<br>
+                但我有梦的天真<br>
+                我将会去证明用我的一生<br>
+                也许我手比较笨<br>
+                但我愿不停探寻<br>
+                付出所有的青春不留遗憾<br>
+        </section>
+        <section class="geci">
+                向前跑 迎着冷眼和嘲笑<br>
+                生命的广阔不历经磨难怎能感到<br>
+                命运它无法让我们跪地求饶<br>
+                就算鲜血洒满了怀抱<br>
+                <br>
+                继续跑 带着赤子的骄傲<br>
+                生命的闪耀不坚持到底怎能看到<br>
+                与其苟延残喘不如纵情燃烧吧<br>
+                有一天会再发芽<br>
+                <br>
+                未来迷人绚烂总在向我召唤<br>
+                哪怕只有痛苦作伴也要勇往直前<br>
+                我想在那里最蓝的大海扬帆<br>
+                绝不管自己能不能回还<br>
+        </section>
+        <section class="geci">
+                失败后郁郁寡欢<br>
+                那是懦夫的表现<br>
+                只要一息尚存请握紧双拳<br>
+                在天色破晓之前<br>
+                我们要更加勇敢<br>
+                等待日出时最耀眼的瞬间<br>
+                <br>
+                向前跑 迎着冷眼和嘲笑<br>
+                生命的广阔不历经磨难怎能感到<br>
+                命运它无法让我们跪地求饶<br>
+                就算鲜血洒满了怀抱<br>
+                <br>
+                继续跑 带着赤子的骄傲<br>
+                生命的闪耀不坚持到底怎能看到<br>
+                与其苟延残喘不如纵情燃烧<br>
+                为了心中的美好<br>
+                不妥协直到变老<br>
+        </section>
+    </div>
+    
+    <footer>
+        <section>
+            <div class="copy">
+                <p>
+                    <a href="">服务条款</a>
+                    <span>|</span>
+                    <a href="">隐私政策</a>
+                    <span>|</span>
+                    <a href="">版权投诉指引</a>
+                    <span>|</span>
+                    <a href="">意见反馈</a>
+                    <span>|</span>
+                </p>
+                <p>
+                    <span>网易公司版权所有©1997-2019</span><span>杭州乐读科技有限公司运营：</span><a href="#">浙网文[2018]3506-263号</a>
+                </p>
+                <p><span>违法和不良信息举报电话：0571-89853516</span><span> 举报邮箱：</span><a href="#">ncm5990@163.com</a></p>
+            </div>
+            <ul class="enter">
+                <li><a href="#"></a><span></span></li>
+                <li><a href="#"></a><span></span></li>
+                <li><a href="#"></a><span></span></li>
+                <li><a href="#"></a><span></span></li>
+            </ul>
+            <div class="login-modes">
+                <div class="lm-title">登录</div>
+                <div class="login0">
+                    <div class="login0-l">
+                        <div class="ptm"></div>
+                        <a class="phone-login" onclick="gotoLogin()"><span>手机号登录</span></a>
+                        <a class="goto-reg" onclick="gotoRegis()"><span>注册</span></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>微信登录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>QQ登录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>微博登录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>网易邮箱账号登录</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login1">
+                    <div class="login1-1 clear">
+                        <select name="diqu" id="">
+                            <option value="+86">+86</option>
+                        </select>
+                        <input type="text" name="login-tel" placeholder="请输入手机号">
+                        <input type="password" name="login-psw" placeholder="请输入密码">
+                        <div class="auto clear">
+                            <label for="auto-login">
+                                <input type="checkbox" id="auto-login">自动登录
+                            </label>
+                            <a href="#">忘记密码？</a>
+                        </div>
+                        <button class="login-btn" onclick="loginID()"><span>登&nbsp;&nbsp;录</span></button>
+                    </div>
+                    <div class="login1-2">
+                        <a onclick="openLogin()" class="back-lg-modes">&lt;&nbsp;&nbsp;其他登录方式</a>
+                        <a onclick="gotoRegis()" class="goto-regis">没有帐号？免费注册&nbsp;&nbsp;&gt;</a>
+                    </div>
+                </div>
+                <div class="login2 regis">
+                    <div class="login2-1">
+                        <div>手机号：</div>
+                        <select name="diqu" id="">
+                            <option value="+86">+86</option>
+                        </select>
+                        <input type="text" name="regis-tel" placeholder="请输入手机号">
+                        <div>密码：</div>
+                        <input type="password" name="regis-psw" placeholder="设置登录密码，不少于6位"">
+                        <button class="regis-btn" onclick="registerId()"><span>注&nbsp;&nbsp;册</span></button>
+                    </div>
+                    <div class="login2-2">
+                        <a onclick="gotoLogin()" class="back-lg">&lt;&nbsp;返回登录</a>
+                    </div>
+                </div>
+                <i class="close-login" title="关闭窗体" onclick="closeLogin()"></i>
+            </div>
+            <script src="js/login-regis.js"></script>
+        </section>
+    </footer>
+    <div id="play-bar" class="bar-lock icon-play-bar">
+        <div class="play-bar-updown icon-play-bar">
+            <a onclick="playlock(this)" id="play-lock" class="icon-play-bar"></a>
+            <span></span>
+        </div>
+        <div class="play-wrap">
+            <div class="play-btns">
+                <button href="#" id="play_prev" class="icon-play-bar"></button>
+                <div>
+                    <input type="button" class="play-start" onclick="PStart(this)">
+                    <input type="button" class="play-suspend" onclick="PSuspend(this)">
+                </div>
+                <video id="video1" width="0" height="0" controls autoplay>
+                    <!-- <source src="src/周杰伦-晴天.mp3" type="video/mp4"> -->
+                </video>
+               <button href="#" id="play_next" class="icon-play-bar" onclick="qiege()"></button>
+            </div> 
+            <div class="music-flag">
+                <img src="img/default_album.jpg">
+                <a href="#" class="icon-play-bar"></a>
+            </div>
+            <div class="play">
+                <p class="music-info">
+                    <a href="#" class="mname"></a>
+                    <a href="#" class="musician"></a>
+                    <a href="#" class="musician-link"></a>
+                </p>
+                <div id="mbar">
+                    <div class="rdy"></div>
+                    <div id="cur" class="cur playscroll"><i></i></div>
+                    <span><em id="aaa">00:00</em> / <em id="mdur">00:00</em></span>
+                </div>
+            </div>
+            <div class="ctrl">
+                <button class="icn ctrl-voice" onclick='vbgOpenClose()'></button>
+                <div style="visibility: hidden" class="voice-barbg">
+                    <div class="vbg">
+                        <span><i></i></span>
+                    </div>
+                </div>
+                <button class="icn ctrl-mode"></button>
+                <button class="icn ctrl-list" onclick="LBoxVisi()">0</button>
+            </div>
+            <div id="g_playlist" style="visibility: hidden">
+                <div class="listhd">
+                    <h4>播放列表(<span class="list_length">0</span>)</h4>
+                    <a href="#" class="addall"><span></span>收藏全部</a>
+                    <span class="line"></span>
+                    <a href="#" class="clearall"><span></span>清除</a>
+                    <p>晴天</p>
+                    <button id="close_plist" onclick="LBoxHidd()"></button>
+                </div>
+                <div class="listbd">
+                    <div class="listbd-l">
+                        <ul id="m_list">
+                            <!-- <li>
+                                <a href="#" class="onplaying">
+                                    <span><i></i></span>
+                                    <span>晴天</span>
+                                    <span><i title="删除"></i><i title="下载"></i><i title="分享"></i><i title="收藏"></i></span>
+                                    <span>周杰伦</span>
+                                    <span>04:29</span>
+                                    <span><i title="来自榜单"></i></span>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="oper">
+                <a href="#" class="icn oper-collect"></a>
+                <a href="#" class="icn oper-share"></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="js/oper.js"></script>
+<script>
+    window.onload=function(){
+        // 获取歌曲信息
+        var url0=location.href;
+        let uid=url0.split("=")[1]
+        var xmlhttp=new XMLHttpRequest()
+        var url="php/chaxun.php?id="+uid;
+        xmlhttp.open('GET',url,true)
+        xmlhttp.send()
+        xmlhttp.onreadystatechange=function(){
+            if(xmlhttp.readyState=="4"&&xmlhttp.status=="200"){
+                if(xmlhttp.response!=0){
+                    var data=JSON.parse(xmlhttp.response)
+                    // console.log(data)
+                    let sname=document.getElementsByClassName("songname")
+                    for(let i=0;i<sname.length;i++){
+                        sname[i].innerHTML=data[0].mName;
+                    }
+                    document.getElementsByClassName("songby")[0].innerHTML=data[0].mBy
+                }else{
+                    alert("该资源不存在")
+                }
+            }
+        }
+        // 获取播放列表
+        getmList();
+        //刷新页面初始化
+        setTimeout(function(){
+            if(document.getElementById("m_list").innerHTML!=""){
+                // 获取播放列表第一首
+                var firstA=document.getElementById("m_list").firstChild.firstChild;
+                // 给第一首设置正在播放样式
+                firstA.className="onplaying";
+                //音频链接初始化为第一首
+                document.getElementById('video1').src=firstA.parentNode.attributes['srclink'].value
+                // 播放条歌曲歌名作者初始化为第一首
+                getClass("mname")[0].innerHTML=firstA.childNodes[1].innerHTML;
+                getClass("musician")[0].innerHTML=firstA.childNodes[3].innerHTML;
+                document.getElementById("video1").pause();
+            }else{
+                getClass("music-info").style.display="none"
+            }
+        },500)
+        // 歌曲结束事件
+        document.getElementById("video1").onended=function(){
+            qiege()
+        }
+        
+        // 获取天气
+        getTianqi()
+        
+    }
+    // 歌词滚动
+    const NUM={
+        index:0
+    }
+    let ul=document.getElementsByClassName("scrollbtn")[0]
+    let li=ul.getElementsByTagName("li")
+    const gundong=(ind)=>{
+        NUM.index=ind.getAttribute("num")
+        // window.scrollTo(0,NUM.index*innerHeight)
+        let sections=document.getElementsByClassName("geci");
+        for(let i=0;i<li.length;i++){
+            sections[i].style="transform:translateY(-"+385*NUM.index+"px);opacity:1"
+            i==NUM.index?li[i].style.background="#000":li[i].style.background="#ccc"
+        }
+    }
+    ul.parentNode.onmousewheel=function(e){
+        NUM.index=Number(NUM.index)
+        if(e.deltaY>0){
+            NUM.index==3?NUM.index=3:NUM.index+=1
+        }else if(e.deltaY<0){
+            NUM.index==0?NUM.index=0:NUM.index-=1
+        }
+        gundong(li[NUM.index])
+    }
+</script>
+</html>

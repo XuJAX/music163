@@ -1,0 +1,1257 @@
+body,ul,p,h1,h2,h3,h4,h5,h6,input{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+ul{
+    list-style: none;
+}
+input{
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.clear::after{
+    content:"";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+#TianQi{
+    display: block;
+    font-size: 12px;
+    color: #ccc;
+    background: #242424;
+}
+#to-top{
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    background-color: #242424;
+    border-bottom: 1px solid #000;
+}
+header{
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+header h1{
+    float: left;
+    width: 177px;
+    height: 100%;
+    background: url(../img/topbar.png) no-repeat 0px 0px;
+}
+header h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header>ul li{
+    float: left;
+}
+header>ul li .top-inner{
+    background: #000;
+    color: #fff;
+}
+header>ul li a{
+    display: block;
+    line-height: 70px;
+    box-sizing: border-box;
+    padding: 0 19px;
+    color: #ccc;
+}
+header>ul li a:hover{
+    color: #fff;
+    background: #000;
+}
+header>ul li:last-child{
+    position: relative;
+}
+header>ul li .top-hot{
+    position: absolute;
+    top: 21px;
+    left: 100px;
+    display: block;
+    width: 26px;
+    height: 13px;
+    background: url(../img/topbar.png) no-repeat -192px 0;
+}
+header .top-login{
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    padding: 5px 22px 0 0;
+    margin: 20px 0 0 20px;
+    background: url(../img/topbar.png) no-repeat -190px -47px;
+}
+header .top-login>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+header .top-login:hover a.color999{
+    color:#999;
+}
+header .top-login>a{
+    font-size: 12px;
+    color: #787878;
+}
+header .top-login a.color999:hover{
+    color: #787878;
+    text-decoration: underline;
+}
+header .top-login:hover ul{
+    display: block;
+}
+header .top-login ul{
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: -68px;
+    width: 160px;
+    height: 196px;
+    box-sizing: border-box;
+    border: 1px solid #202020;
+    box-shadow: 0 8px 24px 0 rgba(0,0,0,.5);
+    z-index: 998;
+}
+header .top-login ul li{
+    height: 38px;
+    background: #2b2b2b;
+    border-bottom: 1px solid #232323;
+}
+header .top-login ul li:hover{
+    background: #353535;
+}
+header .top-login ul li:hover a{
+    color: #fff;
+}
+header .top-login ul li a{
+    padding-left: 17px;
+    font-size: 12px;
+    color: #ccc;
+}
+header .top-login ul i.t-3{
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 73px;
+    width: 14px;
+    height: 8px;
+    background: url(../img/toplist.png) no-repeat -20px 0px;
+    z-index: 999;
+}
+header .top-login ul li span{
+    line-height: 38px;
+}
+header .top-login ul li i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: url(../img/toplist.png) no-repeat 0px 0px;
+}
+header .top-login ul li:nth-child(3) i{
+    background-position: -20px -20px;
+}
+header .top-login ul li:nth-child(4) i{
+    background-position: -18px -40px;
+}
+header .top-login ul li:nth-child(5) i{
+    background-position: 0px -20px;
+}
+header .top-login ul li:nth-child(6) i{
+    background-position: 0px -40px;
+}
+header .creaters{
+    float: right;
+    width: 90px;
+    height: 32px;
+    margin: 19px 0 0 12px;
+    box-sizing: border-box;
+    border: 1px solid #4f4f4f;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    line-height: 30px;
+}
+header .creaters:hover{
+    color: #fff;
+    border-color: #ccc;
+}
+header .search-box{
+    position: relative;
+    float: right;
+    padding-left: 1px;
+}
+header input[type="text"]{
+    width: 158px;
+    height: 32px;
+    margin-top: 19px;
+    padding-left: 30px;
+    background: #fff url(../img/topbar.png) no-repeat 0px -99px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 32px;
+    outline: none;
+}
+header input[type="text"]::-webkit-input-placeholder{
+    font-size: 12px;
+    color: #9b9b9b;
+}
+header input[type="text"]:focus::-webkit-input-placeholder{
+    font-size: 0;
+}
+header .res-search{
+    position: absolute;
+    top: 59px;
+    left: 0;
+    display: none;
+    width: 240px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 4px 7px #555;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+    z-index: 101;
+}
+header .res-search a{
+    display: block;
+    padding: 3px 10px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #333;
+}
+header .res-search a:hover{
+    background: #ddd;
+}
+nav{
+    width: 100%;
+    height: 35px;
+    margin-top: 1px;
+    box-sizing: border-box;
+    background: #c20c0c;
+    border-bottom: 1px solid #a40011;
+}
+nav ul{
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 180px;
+    box-sizing: border-box;
+}
+nav ul li{
+    float: left;
+    position: relative;
+}
+nav ul li .red-3{
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin-left: -6px;
+    display: block;
+    width: 12px;
+    height: 6px;
+    background: url(../img/topbar.png) no-repeat -226px 0;
+}
+nav ul li a{
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+nav ul li a .nav-inner{
+    background: #9b0909;
+}
+nav ul li a span{
+    display: inline-block;
+    height: 20px;
+    box-sizing: border-box;
+    margin: 7px 17px;
+    padding: 0px 13px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+nav ul li a:hover span{
+    background: #9b0909;
+}
+footer{
+    width: 100%;
+    height: 149px;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    border-top: 1px solid #d3d3d3;
+    font-size: 12px;
+}
+footer section{
+    width: 980px;
+    margin: 0 auto;
+}
+footer .copy{
+    float: left;
+    width: 520px;
+    padding-top: 15px;
+}
+footer .copy p{
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+    color: #666;
+}
+footer .copy p:first-child a{
+    color: #999;
+}
+footer .copy p:first-child span{
+    color: #999;
+    margin: 0 8px 0 10px;
+}
+footer .copy p:nth-child(2) a{
+    color: #666;
+}
+footer .copy p:nth-child(2) span:first-child,.copy p:nth-child(3) span:first-child{
+    margin-right: 14px;
+}
+footer .copy p:last-child a{
+    color: #333;
+}
+footer .copy p a:hover{
+    text-decoration: underline;
+}
+footer ul.enter{
+    float: right;
+    width: 360px;
+    margin-top: 21px;
+    height: 70px;
+}
+footer ul.enter li{
+    margin-left: 30px;
+    float: left;
+}
+footer ul.enter li a{
+    display: block;
+    width: 50px;
+    height: 45px;
+    margin: 0 5px;
+    background: url(../img/foot_enter_new.png) no-repeat;
+    background-size: 108px 451px;
+}
+footer ul.enter li:first-child a{
+    background-position: -62px -101px;
+}
+footer ul.enter li:nth-child(2) a{
+    background-position: 0 0;
+}
+footer ul.enter li:nth-child(3) a{
+    background-position: -62px -51px;
+}
+footer ul.enter li:last-child a{
+    background-position: 0 -101px;
+}
+/* footer ul.enter li a的hover效果 */
+footer ul.enter li:first-child:hover a{
+    background-position: -62px -406px;
+    opacity: .5;
+}
+footer ul.enter li:nth-child(2):hover a{
+    background-position: 0 -304px;
+    opacity: .5;
+}
+footer ul.enter li:nth-child(3):hover a{
+    background-position: -62px -355px;
+    opacity: .5;
+}
+footer ul.enter li:last-child:hover a{
+    background-position: 0 -406px;
+    opacity: .5;
+}
+footer ul.enter li span{
+    display: block;
+    width: 52px;
+    height: 14px;
+    margin: 5px 4px 0;
+    background: url(../img/foot_enter_tt.png) no-repeat;
+    background-size: 178px 115px;
+}
+footer ul.enter li:first-child span{
+    background-position: -1px -105px;
+}
+footer ul.enter li:nth-child(2) span{
+    background-position: 0 0;
+}
+footer ul.enter li:nth-child(3) span{
+    background-position: -1px -63px;
+}
+/* footer ul.enter li span的hover效果 */
+footer ul.enter li:last-child span{
+    background-position: -1px -84px;
+}
+footer ul.enter li:first-child:hover span{
+    background-position: -127px -105px;
+}
+footer ul.enter li:nth-child(2):hover span{
+    background-position: -126px 0;
+}
+footer ul.enter li:nth-child(3):hover span{
+    background-position: -127px -63px;
+}
+footer ul.enter li:last-child:hover span{
+    background-position: -127px -84px;
+}
+.login-modes{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 530px;
+    margin-left: -265px;
+    margin-top: -161px;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.8);
+    z-index: 198;
+}
+.login-modes .lm-title{
+    height: 38px;
+    background: #2d2d2d;
+    border-radius: 4px 4px 0 0;
+    padding: 0 45px 0 18px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 38px;
+    color: #fff; 
+}
+.login-modes .close-login{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(../img/layer.png) no-repeat 0 -95px;
+}
+/* 登录方式窗口 */
+.login-modes .login0{
+    width: 100%;
+    padding: 40px 0 ;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+.login-modes .login0 .login0-l{
+    float: left;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 0 35px 3px 40px;
+    border-right: 1px dotted #ccc;
+}
+.ptm{
+    height: 120px;
+    background: url(../img/platform.png) no-repeat;
+}
+.login-modes .login0 .login0-l a{
+    display: block;
+    margin-top: 10px;
+    padding-right: 5px;
+    background-image: url(../img/button2.png);
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+.login-modes .login0 .login0-l a span{
+    display: block;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+}
+a.phone-login{
+    background-position: right -428px;
+}
+a.phone-login span{
+    color: #fff;
+    background: url(../img/button2.png) no-repeat;
+    background-position: 0 -387px;
+}
+a.goto-reg{
+    background-position: right -100px;
+}
+a.goto-reg span{
+    color: #333;
+    background: url(../img/button2.png) no-repeat;
+    background-position: 0 -59px;
+}
+.login-modes .login0 ul{
+    float: left;
+    padding-left: 39px;
+    margin-top: -10px;
+}
+.login-modes .login0 ul li{
+    margin-top: 15px;
+}
+.login-modes .login0 ul li a{
+    display: block;
+    font-size: 12px;
+    color: #333;
+}
+.login-modes .login0 ul li a:hover span{
+    text-decoration: underline;
+}
+.login-modes .login0 ul li a i{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-right: 14px;
+    background: url(../img/logo.png) no-repeat;
+    background-position: -150px -670px;
+    vertical-align: middle;
+}
+.login-modes .login0 ul li:nth-child(2) a i{
+    background-position: -190px -670px;
+}
+.login-modes .login0 ul li:nth-child(3) a i{
+    background-position: -231px -670px;
+}
+.login-modes .login0 ul li:nth-child(4) a i{
+    background-position: -271px -670px;
+}
+/* 登录窗口 */
+.login-modes .login1{
+    display: none;
+    width: 100%;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+.login-modes .login1 .login1-1{
+    width: 220px;
+    margin: 0 auto;
+    padding: 30px 0 43px;
+}
+.login1-1 select{
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #cdcdcd;
+    border-right: 0;
+    border-radius: 2px 0 0 2px;
+}
+.login1-1 input[name="login-tel"]{
+    float: left;
+    width: 173px;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius:  0 2px 2px 0;
+}
+.login1-1 input[name="login-psw"]{
+    margin-top: 10px;
+    border-radius: 2px;
+    width: 220px;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 6px;
+    border: 1px solid #cdcdcd;
+}
+.login1-1 .auto{
+    margin-top: 10px;
+}
+.login1-1 .auto label{
+    float: left;
+    line-height: 14px;
+}
+.login1-1 .auto label input{
+    margin-right: 12px;
+    margin-top: -1px;
+    vertical-align: middle;
+}
+.login1-1 .auto>a{
+    float: right;
+    color: #666;
+}
+.login1-1 .login-btn{
+    width: 100%;
+    height: 31px;
+    border: 0;
+    margin-top: 20px;
+    padding: 0 5px 0 0;
+    background: url(../img/button2.png) no-repeat;
+    background-position: right -428px;
+    vertical-align: top;
+    cursor: pointer;
+    outline: none;
+}
+.login1-1 .login-btn span{
+    display: block;
+    height: 31px;
+    line-height: 31px;
+    color: #fff;
+    background: url(../img/button2.png) no-repeat;
+    background-position: 0 -387px;
+    vertical-align: top;
+}
+.login1-2{
+    height: 48px;
+    padding: 0 19px; 
+    border-top: 1px solid #c6c6c6;
+    background: #f7f7f7;
+}
+.login1-2 a.back-lg-modes{
+    float: left;
+    height: 100%;
+    line-height: 48px;
+    color: #0c72c3;
+}
+.login1-2 a.goto-regis{
+    float: right;
+    height: 100%;
+    line-height: 48px;
+    color: #999;
+}
+.login2{
+    display: none;
+    width: 100%;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+.login2-1{
+    width: 220px;
+    margin: 0 auto;
+    padding: 30px 0 43px;
+}
+.login2-1 div{
+    color: #666;
+    margin-bottom: 10px;
+    clear: both;
+}
+.login2-1 select{
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #cdcdcd;
+    border-right: 0;
+    border-radius: 2px 0 0 2px;
+    margin-bottom: 10px;
+}
+.login2-1 input[name="regis-tel"]{
+    float: left;
+    width: 173px;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius:  0 2px 2px 0;
+    margin-bottom: 10px;
+}
+.login2-1 input[name="regis-psw"]{
+    border-radius: 2px;
+    width: 220px;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 6px;
+    border: 1px solid #cdcdcd;
+}
+.login2-1 .regis-btn{
+    width: 100%;
+    height: 31px;
+    border: 0;
+    margin-top: 20px;
+    padding: 0 5px 0 0;
+    background: url(../img/button2.png) no-repeat;
+    background-position: right -428px;
+    vertical-align: top;
+    cursor: pointer;
+    outline: none;
+}
+.login2-1 .regis-btn span{
+    display: block;
+    height: 31px;
+    line-height: 31px;
+    color: #fff;
+    background: url(../img/button2.png) no-repeat;
+    background-position: 0 -387px;
+    vertical-align: top;
+}
+.login2-2{
+    height: 48px;
+    padding: 0 19px; 
+    border-top: 1px solid #c6c6c6;
+    background: #f7f7f7;
+}
+.login2-2 a.back-lg{
+    float: left;
+    height: 100%;
+    line-height: 48px;
+    color: #0c72c3;
+}
+
+#play-bar{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: 0 67px 0 0;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    z-index: 199;
+    transition: all 1s;
+}
+.bar-lock{
+    height: 53px;
+}
+.bar-unlock{
+    height: 6px;
+}
+.icon-play-bar{
+    background: url(../img/playbar.png) no-repeat;
+}
+#play-bar .play-bar-updown{
+    float: right;
+    position: relative;
+    top: -14px;
+    width: 67px;
+    height: 21px;
+    background-position: 0 -380px;
+    z-index: 11;
+}
+#play-bar .play-bar-updown span{
+    position: absolute;
+    bottom: -2px;
+    left: 2px;
+    display: block;
+    width: 47px;
+    height: 3px;
+    background: #373537;
+    border-radius: 1px;
+}
+#play-bar .play-bar-updown a{
+    position: absolute;
+    top: 6px;
+    left: 17px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-position: -99px -380px;
+    z-index: 12;
+}
+#play-bar .play-bar-updown a:hover{
+    background-position: -99px -400px;
+}
+#play-bar .play-bar-updown a.unlock{
+    background-position: -80px -380px;
+}
+#play-bar .play-bar-updown a.unlock:hover{
+    background-position: -80px -400px;
+}
+#play-bar .play-wrap{
+    width: 980px;
+    height: 47px;
+    margin: 6px auto 0;
+}
+#play-bar .play-wrap .play-btns{
+    float: left;
+    width: 137px;
+    padding-top: 6px;
+}
+#play-bar .play-wrap .play-btns .icon-play-bar{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 5px 8px 0 0;
+    border: 0;
+    outline: none;
+}
+#play-bar .play-wrap .play-btns .icon-play-bar:first-child{
+    background-position: 0 -130px;
+}
+#play-bar .play-wrap .play-btns .icon-play-bar:first-child:hover{
+    background-position: -30px -130px;
+    float: left;
+}
+#play-bar .play-wrap .play-btns div{
+    float: left;
+    width: 36px;
+    height: 36px;
+    /* overflow: hidden; */
+    position: relative;
+    margin: 0 8px 0 0;
+}
+#play-bar .play-wrap .play-btns div input[type="button"]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: url(../img/playbar.png) no-repeat 0 -204px;
+}
+#play-bar .play-wrap .play-btns input[type="button"].play-suspend{
+    display: none;
+    background-position: 0 -204px;
+}
+#play-bar .play-wrap .play-btns input[type="button"].play-start:hover{
+    background: url(../img/playbar.png) no-repeat -40px -204px;
+}
+#play-bar .play-wrap .play-btns input[type="button"].play-suspend{
+    background-position: 0 -165px;
+}
+#play-bar .play-wrap .play-btns input[type="button"].play-suspend:hover{
+    background: url(../img/playbar.png) no-repeat -40px -165px;
+}
+#play-bar .play-wrap .play-btn #video1{
+    display: none;
+}
+#play-bar .play-wrap .play-btns .icon-play-bar:last-child{
+    background-position: -80px -130px;
+}
+#play-bar .play-wrap .play-btns .icon-play-bar:last-child:hover{
+    background-position: -110px -130px;
+}
+#play-bar .play-wrap .music-flag{
+    float: left;
+    position: relative;
+    margin: 6px 15px 0 0;
+}
+#play-bar .play-wrap .music-flag img{
+    width: 34px;
+    height: 34px;
+    vertical-align: middle;
+    margin-top: 2px;
+}
+#play-bar .play-wrap .music-flag a{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 34px;
+    height: 35px;
+    background-position: 0 -80px;
+}
+#play-bar .play-wrap .play{
+    float: left;
+    width: 608px;
+    height: 37px;
+}
+#play-bar .play-wrap .play p{
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+}
+#play-bar .play-wrap .play p .mname{
+    color: #e8e8e8;
+}
+#play-bar .play-wrap .play p .musician{
+    margin-left: 15px;
+    color: #9b9b9b;
+}
+#play-bar .play-wrap .play p a:nth-child(-n+2):hover{
+    text-decoration: underline;
+}
+#play-bar .play-wrap .play p .musician-link{
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    margin: -1px 0 0 13px;
+    vertical-align: middle;
+    background: url(../img/playbar.png) no-repeat -110px -103px;
+}
+#play-bar .play-wrap .play p .musician-link:hover{
+    background-position: -130px -103px;
+}
+#play-bar .play-wrap .play #mbar{
+    display: inline-block;
+    position: relative;
+    top: -9px;
+    width: 493px;
+    height: 8px;
+    background: url(../img/statbar.png) no-repeat;
+}
+#play-bar .play-wrap .play #mbar .rdy{
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    background: url(../img/statbar.png) no-repeat 0 -30px;
+}
+.play-run{
+    animation-play-state:running !important;
+}
+#play-bar .play-wrap .play #mbar .cur{
+    position: absolute;
+    top: 0;
+    width: 0%;
+    max-width: 100%;
+    height: 8px;
+    background: url(../img/statbar.png) no-repeat 0 -66px;
+}
+.playscroll{
+    animation-name:playscroll;
+    animation-duration:269s;
+    animation-timing-function:linear;
+    /* animation-iteration-count:infinite; */
+    animation-play-state:paused;
+}
+@keyframes playscroll{
+    from{width: 0%}
+    to{width: 100%}
+}
+#play-bar .play-wrap .play #mbar .cur i{
+    position: absolute;
+    top: -7px;
+    right: -11px;
+    display: block;
+    width: 22px;
+    height: 24px;
+    background: url(../img/iconall.png) no-repeat 0 -250px;
+}
+#play-bar .play-wrap .play #mbar .cur i:hover{
+    background-position: 0 -280px;
+}
+#play-bar .play-wrap .play #mbar>span{
+    position: absolute;
+    right: -84px;
+    bottom: -3px;
+    font-size: 12px;
+    color: #797979;
+    text-shadow: 0 1px 0 #121212;
+}
+#play-bar .play-wrap .play #mbar>span em{
+    font-style: normal;
+    color: #a1a1a1;
+}
+#play-bar .play-wrap .ctrl{
+    position: relative;
+    float: right;
+    height: 36px;
+    padding-left: 13px;
+    background: url(../img/playbar.png) no-repeat -147px -238px;
+}
+#play-bar .play-wrap .icn {
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    background: url(../img/playbar.png) no-repeat;
+}
+#play-bar .play-wrap .ctrl .ctrl-voice{
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    background-position: -2px -247px;
+    cursor: pointer;
+}
+#play-bar .play-wrap .ctrl .ctrl-voice:hover{
+    background-position: -31px -247px;
+}
+#play-bar .play-wrap .ctrl .voice-barbg{
+    position: absolute;
+    left: 10px;
+    top: -113px;
+    width: 32px;
+    height: 113px;
+    background: url(../img/playbar.png) no-repeat 0 -503px;
+    z-index: 102;
+}
+#play-bar .play-wrap .ctrl .voice-barbg .vbg{
+    position: absolute;
+    left: 14px;
+    bottom: 10px;
+    width: 4px;
+    height: 92px;
+    border-radius: 2px;
+}
+#play-bar .play-wrap .ctrl .voice-barbg .vbg span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 64%;
+    max-height: 100%;
+    background: url(../img/playbar.png) -40px bottom;
+}
+#play-bar .play-wrap .ctrl .voice-barbg .vbg span i{
+    position: absolute;
+    top: -9px;
+    left: -7px;
+    display: block;
+    width: 18px;
+    height: 20px;
+    background: url(../img/iconall.png) no-repeat -40px -250px;
+}
+#play-bar .play-wrap .ctrl .voice-barbg .vbg span i:hover{
+    background-position: -40px -280px;
+}
+#play-bar .play-wrap .ctrl .ctrl-mode{
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    background-position: -66px -247px;
+    cursor: pointer;
+}
+#play-bar .play-wrap .ctrl .ctrl-mode:hover{
+    background-position: -93px -247px;
+}
+#play-bar .play-wrap .ctrl .ctrl-list{
+    width: 59px;
+    padding: 0 0 0 21px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 12px;
+    color: #666;
+    background-position: -43px -67px;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+#play-bar .play-wrap .ctrl .ctrl-list:hover{
+    background-position: -43px -97px;
+}
+#g_playlist{
+    position: absolute;
+    left: 50%;
+    bottom: 47px;
+    width: 986px;
+    height: 301px;
+    margin-left: -493px;
+    font-size: 12px;
+    z-index: 101;
+}
+#g_playlist .listhd{
+    position: relative;
+    height: 41px;
+    padding: 0 5px;
+    background: url(../img/playlist_bg.png) no-repeat 0 0;
+}
+#g_playlist .listhd h4{
+    position: absolute;
+    left: 25px;
+    top: 0;
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    color: #e2e2e2;
+}
+#g_playlist .listhd .addall{
+    position: absolute;
+    left: 398px;
+    top: 12px;
+    display: block;
+    width: 70px;
+    height: 15px;
+    color: #ccc;
+}
+#g_playlist .listhd .addall span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 1px 6px 0 0;
+    vertical-align: middle;
+    background: url(../img/playlist.png) no-repeat -24px 0;
+}
+#g_playlist .listhd .addall:hover{
+    text-decoration: underline;
+}
+#g_playlist .listhd .addall:hover span{
+    background-position: -24px -20px;
+}
+#g_playlist .listhd .line{
+    position: absolute;
+    top: 13px;
+    left: 477px;
+    height: 15px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #2c2c2c;
+}
+#g_playlist .listhd .clearall{
+    position: absolute;
+    left: 490px;
+    top: 12px;
+    display: block;
+    width: 43px;
+    height: 15px;
+    line-height: 13px;
+    color: #ccc;
+}
+#g_playlist .listhd .clearall span{
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+    margin: 1px 6px 0 0;
+    vertical-align: middle;
+    background: url(../img/playlist.png) no-repeat -51px 0;
+}
+#g_playlist .listhd .clearall:hover{
+    color: #e2e2e2;
+    text-decoration: underline;
+}
+#g_playlist .listhd .clearall:hover span{
+    background-position: -51px -20px;
+}
+#g_playlist .listhd p{
+    position: absolute;
+    left: 595px;
+    top: 0;
+    width: 346px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+#g_playlist .listhd button{
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: url(../img/playlist.png) no-repeat -195px 9px;
+}
+
+#g_playlist .listbd{
+    height: 260px;
+    background: url(../img/playlist_bg.png) repeat-y -1014px 0;
+}
+#g_playlist .listbd .listbd-l{
+    width: 553px;
+    height: 100%;
+    margin-left: 2px;
+    border-right: 6px solid rgba(0,0,0,.5);
+}
+#g_playlist .listbd .listbd-l ul li>a{
+    display: block;
+    width: 100%;
+    height: 28px;
+    color: #ccc;
+}
+#g_playlist .listbd .listbd-l ul li>a.onplaying{
+    background: rgba(0,0,0,.3);
+}
+#g_playlist .listbd .listbd-l ul li>a:hover{
+    background: rgba(0,0,0,.4);
+    color: #fff;
+}
+#g_playlist .listbd .listbd-l ul li>a span{
+    float: left;
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(1) i{
+    display: block;
+    width: 10px;
+    height: 13px;
+    margin: 8px 0 0 0px;
+}
+#g_playlist .listbd .listbd-l ul li>a.onplaying span:first-child i{
+    background: url(../img/playlist.png) no-repeat -182px 0;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(2){
+    width: 256px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3){
+    width: 88px;
+    padding-left: 0;
+    visibility: hidden;
+}
+#g_playlist .listbd .listbd-l ul li>a:hover span:nth-child(3){
+    visibility: visible;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 7px 0 0 10px;
+    background: url(../img/playlist.png) no-repeat;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i:nth-child(1){
+    background-position: -24px 0;
+    margin-left: 0;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i:nth-child(2){
+    width: 14px;
+    background-position: 0px 0;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i:nth-child(3){
+    width: 14px;
+    background-position: -57px -50px;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i:nth-child(4){
+    width: 13px;
+    background-position: -51px 0;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i:nth-child(1):hover{
+    background-position: -24px -20px;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i:nth-child(2):hover{
+    background-position: 0px -20px;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i:nth-child(3):hover{
+    background-position: -80px -50px;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(3) i:nth-child(4):hover{
+    background-position: -51px -20px;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(4){
+    width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #9b9b9b;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(4):hover{
+    text-decoration: underline;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(5){
+    color:#666
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(6){
+    width: 33px;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(6) i{
+    float: right;
+    width: 14px;
+    height: 16px;
+    margin-top: 7px;
+    background: url(../img/playlist.png) no-repeat -80px 0;
+}
+#g_playlist .listbd .listbd-l ul li>a span:nth-child(6) i:hover{
+    background-position: -80px -20px;
+}
+#g_playlist .listbd .listbd-l ul li>a:hover span{
+    color: #fff;
+}
+
+#play-bar .play-wrap .oper{
+    float: right;
+}
+#play-bar .play-wrap .oper .oper-collect{
+    background-position: -88px -163px;
+}
+#play-bar .play-wrap .oper .oper-collect:hover{
+    background-position: -88px -189px;
+}
+#play-bar .play-wrap .oper .oper-share{
+    background-position: -113px -163px;
+}
+#play-bar .play-wrap .oper .oper-share:hover{
+    background-position: -113px -189px;
+}

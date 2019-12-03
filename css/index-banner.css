@@ -1,0 +1,121 @@
+#banner{
+    width: 100%;
+    height: 336px;
+    margin-top: 34px;
+}
+#banner .center-box{
+    width: 982px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#banner .download{
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    width: 254px;
+    height: 100%;
+    background: url(../img/download.png) no-repeat;
+    z-index: 100;
+}
+#banner .download a{
+    display: block;
+    width: 215px;
+    height: 56px;
+    margin: 212px 19px 0;
+    background: url(../img/download.png) no-repeat 0px -340px;
+    opacity: 0;
+    z-index: 101;
+}
+#banner .download a:hover{
+    opacity: 1;
+}
+#banner .download p{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #8d8d8d;
+}
+#banner .download div{
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: url(../img/banner.png) no-repeat;
+}
+#banner .download .shadow{
+    left: -20px;
+    background-position: -1px 0;
+}
+#banner .download .shadow-r{
+    right: -20px;
+    background-position: -20px 0;
+}
+#banner .swiper-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: -335px;
+}
+#banner .swiper-container .swiper-slide{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+#banner .swiper-container .swiper-slide img{
+    position: absolute;
+    left: 50%;
+    width: 730px;
+    margin-left: -492px;
+    border: 0;
+    /* vertical-align: middle; */
+}
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 6px;
+    left: -126px;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0;
+    background: url(../img/banner.png) no-repeat 3px -343px;
+    opacity: 1;
+}
+span.swiper-pagination-bullet:hover{
+    background-position: -16px -343px;
+}
+.swiper-pagination-white .swiper-pagination-bullet-active {
+    background: url(../img/banner.png) no-repeat -16px -343px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 37px;
+    height: 63px;
+    margin-top: -31px;
+    z-index: 10;
+    cursor: pointer;
+}
+.swiper-button-prev.swiper-button-white,
+.swiper-container-rtl .swiper-button-next.swiper-button-white {
+    background: url("../img/banner.png") no-repeat 0 -360px;
+    margin-left: -550px;
+}
+.swiper-button-prev.swiper-button-white:hover{
+    background-position: 0 -430px;
+}
+.swiper-button-next.swiper-button-white,
+.swiper-container-rtl .swiper-button-prev.swiper-button-white {
+    background: url("../img/banner.png") no-repeat 0 -508px;
+    margin-left: 523px;
+}
+.swiper-button-next.swiper-button-white:hover{
+    background-position: 0 -578px;
+}
